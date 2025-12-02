@@ -1,0 +1,81 @@
+# ----------------------------
+# Python general
+# ----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyd
+*.pdb
+*.log
+*.sqlite3
+*.db
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*.$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# VS Code settings
+.vscode/
+.history/
+
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows system files
+Thumbs.db
+Desktop.ini
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/
+
+# Local data files (optional keep/remove)
+data/pcep_checklist.json
+
+# Environments & secrets
+.env
+.env.*
+*.env
+
+# Cache
+.cache/
+pytest_cache/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
