@@ -24,8 +24,16 @@ def load_data(path):
     if not os.path.exists(path):
         os.makedirs(os.path.dirname(path), exist_ok=True)
         return init_file(path)
+
     with open(path, "r", encoding="utf-8") as f:
-        return json.load(f)
+        data = json.load(f)
+
+    # Auto-heal missing fields
+    data.setdefault("start_date", date.today().isoformat())
+    data.setdefault("end_date", date.today().isoformat())
+    data.setdefault("sections", [])
+
+    return data
 
 
 def save_data(path, data):

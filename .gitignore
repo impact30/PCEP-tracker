@@ -64,6 +64,7 @@ Desktop.ini
 
 # Local data files (optional keep/remove)
 data/pcep_checklist.json
+data/
 
 # Environments & secrets
 .env
